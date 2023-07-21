@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/fl_ip_head"
+        android:layout_width="@dimen/ksl_dp_190"
+        android:layout_height="@dimen/ksl_dp_175"
+        android:background="@drawable/shape_bear_bg"
+        android:paddingHorizontal="@dimen/ksl_dp_15"
+        android:paddingTop="@dimen/ksl_dp_25"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.wiser.animationlistdemo.loginanim.HeadAnim
+            android:id="@+id/ip_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/ksl_dp_42"
+            android:layout_height="@dimen/ksl_dp_55"
+            android:layout_gravity="center"
+            android:background="@drawable/bear_nose_bg" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_mouth"
+            android:layout_width="@dimen/ksl_dp_31"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/ksl_dp_5"
+            android:src="@drawable/bear_mouth_close" />
+
+        <com.wiser.animationlistdemo.loginanim.WinkAnim
+            android:id="@+id/iv_left_eye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="@dimen/ksl_dp_40"
+            android:layout_marginTop="@dimen/ksl_dp_58" />
+
+        <com.wiser.animationlistdemo.loginanim.WinkAnim
+            android:id="@+id/iv_right_eye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/ksl_dp_58"
+            android:layout_marginEnd="@dimen/ksl_dp_40" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_eyebrow_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_marginStart="@dimen/ksl_dp_42"
+            android:layout_marginTop="@dimen/ksl_dp_38"
+            android:src="@drawable/login_bear_eyebrow_left"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_eyebrow_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/ksl_dp_40"
+            android:layout_marginTop="@dimen/ksl_dp_38"
+            android:src="@drawable/login_bear_eyebrow_right"/>
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_hand_left"
+        android:layout_width="@dimen/ksl_dp_55"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:rotation="-110"
+        android:src="@drawable/bear_hand_left"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/fl_hand"
+        app:layout_constraintEnd_toStartOf="@+id/fl_ip_head"
+        app:layout_constraintTop_toTopOf="@+id/fl_hand" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_hand_right"
+        android:layout_width="@dimen/ksl_dp_55"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:rotation="110"
+        android:src="@drawable/bear_hand_right"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/fl_hand"
+        app:layout_constraintStart_toEndOf="@+id/fl_ip_head"
+        app:layout_constraintTop_toTopOf="@+id/fl_hand" />
+
+    <FrameLayout
+        android:id="@+id/fl_hand"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fl_ip_head" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ksl_dp_45"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fl_ip_head" />
+
+    <com.wiser.animationlistdemo.loginanim.ClipCenterCircleFrameLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fl_ip_head"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fl_ip_head" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wiser.animationlistdemo.cardrotate.view.CustomScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll_view_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_top_view_page"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ksl_dp_450"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_background_page"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+                <com.wiser.animationlistdemo.cardrotate.view.ShadowContainer
+                    android:id="@+id/shadow_cover"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:container_round_corner="container_corner_all"
+                    app:container_shadowColor="#17000000"
+                    app:container_shadowRadius="@dimen/ksl_dp_40"
+                    app:container_shadowShape="container_round_rectangle"
+                    app:container_shadowSide="container_all"
+                    app:container_shadowRoundRadius="@dimen/ksl_dp_20"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/iv_cover"
+                        android:layout_width="@dimen/ksl_dp_190"
+                        android:layout_height="@dimen/ksl_dp_250"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY" />
+
+                </com.wiser.animationlistdemo.cardrotate.view.ShadowContainer>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <include
+                android:id="@+id/page_content"
+                layout="@layout/item_card_content1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl_top_view_page" />
+
+            <LinearLayout
+                android:id="@+id/ll_function_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/ksl_dp_10"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@+id/page_content"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl_top_view_page">
+
+                <FrameLayout
+                    android:layout_width="@dimen/ksl_dp_45"
+                    android:layout_height="@dimen/ksl_dp_45"
+                    android:background="#E3000000">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/ksl_dp_20"
+                        android:layout_height="@dimen/ksl_dp_20"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_close" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="@dimen/ksl_dp_45"
+                    android:layout_height="@dimen/ksl_dp_45"
+                    android:background="#9603DAC5">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/ksl_dp_20"
+                        android:layout_height="@dimen/ksl_dp_20"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_menu" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</com.wiser.animationlistdemo.cardrotate.view.CustomScrollView>

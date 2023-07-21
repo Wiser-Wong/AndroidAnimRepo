@@ -1,0 +1,397 @@
+{
+  "discover_list": [
+    {
+      "element_id": 1000,
+      "title": "登录",
+      "children": {
+        "banner": [
+          {
+            "parentId": 1000,
+            "title": "登录动画",
+            "element_type": "title"
+          }
+        ],
+        "container": [
+          {
+            "parentId": 1000,
+            "element_id": "1001",
+            "title": "登录动画",
+            "element_type": "container",
+            "pic": "login.gif"
+          }
+        ]
+      }
+    },
+    {
+      "element_id": 2000,
+      "title": "列表",
+      "children": {
+        "banner": [
+          {
+            "parentId": 2000,
+            "title": "列表动画",
+            "element_type": "title"
+          }
+        ],
+        "container": [
+          {
+            "parentId": 2000,
+            "element_id": "2001",
+            "title": "IP列表",
+            "element_type": "container",
+            "pic": "ip_list.gif"
+          },
+          {
+            "parentId": 2000,
+            "element_id": "2002",
+            "title": "频道列表",
+            "element_type": "container",
+            "pic": "album_list.gif"
+          },
+          {
+            "parentId": 2000,
+            "element_id": "2003",
+            "title": "播放器列表",
+            "element_type": "container",
+            "pic": "cc.gif"
+          }, {
+            "parentId": 2000,
+            "element_id": "2004",
+            "title": "普通列表",
+            "element_type": "container",
+            "pic": "normal_list.gif"
+          }
+        ]
+      }
+    },
+    {
+      "element_id": 3000,
+      "title": "详情页",
+      "children": {
+        "banner": [
+          {
+            "parentId": 3000,
+            "title": "详情页动画",
+            "element_type": "title"
+          }
+        ],
+        "container": [
+          {
+            "parentId": 3000,
+            "element_id": 3001,
+            "title": "3D内容展示",
+            "element_type": "container",
+            "pic": "card_details.gif"
+          },
+          {
+            "parentId": 3000,
+            "element_id": 3002,
+            "title": "IP详情页",
+            "element_type": "container",
+            "pic": "ip_list.gif"
+          },
+          {
+            "parentId": 3000,
+            "element_id": 3003,
+            "title": "多级列表详情页",
+            "element_type": "container",
+            "pic": "list_combination.gif"
+          }
+        ]
+      }
+    },
+    {
+      "element_id": 4000,
+      "title": "卡片",
+      "children": {
+        "banner": [
+          {
+            "parentId": 4000,
+            "title": "卡片动画",
+            "element_type": "title"
+          }
+        ],
+        "container": [
+          {
+            "parentId": 4000,
+            "element_id": 4001,
+            "title": "图卡分享",
+            "element_type": "container",
+            "pic": "card.gif"
+          },
+          {
+            "parentId": 4000,
+            "element_id": 4002,
+            "title": "组合专辑",
+            "element_type": "container",
+            "pic": "card_details.gif"
+          }
+        ]
+      }
+    },
+    {
+      "element_id": 5000,
+      "title": "播放器",
+      "children": {
+        "banner": [
+          {
+            "parentId": 5000,
+            "title": "播放器动画",
+            "element_type": "title"
+          }
+        ],
+        "container": [
+          {
+            "parentId": 5000,
+            "element_id": 5001,
+            "title": "特效播放器",
+            "element_type": "container",
+            "pic": "special_audio.gif"
+          },
+          {
+            "parentId": 5000,
+            "element_id": 5002,
+            "title": "全屏播放器",
+            "element_type": "container",
+            "pic": "full_audio.gif"
+          },
+          {
+            "parentId": 5000,
+            "element_id": 5003,
+            "title": "小图播放器",
+            "element_type": "container",
+            "pic": "normal_audio.gif"
+          },{
+            "parentId": 5000,
+            "element_id": 5004,
+            "title": "播放器故事详情",
+            "element_type": "container",
+            "pic": "audio_detail.gif"
+          }
+        ]
+      }
+    },
+    {
+      "element_id": 6000,
+      "title": "家长锁",
+      "children": {
+        "banner": [
+          {
+            "parentId": 6000,
+            "title": "家长锁动画",
+            "element_type": "title"
+          }
+        ],
+        "container": [
+          {
+            "parentId": 6000,
+            "element_id": 6001,
+            "title": "家长锁",
+            "element_type": "container",
+            "pic": "https://tcdn.kaishustory.com/kstory/androidapkdir/image/8f8cbac1-ed3f-4a9b-9caf-8445af3a2d9c_info_w=343_h=274_s=44078.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "element_id": 6002,
+      "title": "水波纹",
+      "children": {
+        "banner": [
+          {
+            "parentId": 6000,
+            "title": "水波纹 叫早哄睡动画",
+            "element_type": "title"
+          }
+        ],
+        "container": [
+          {
+            "parentId": 6002,
+            "element_id": 6003,
+            "title": "叫早哄睡",
+            "element_type": "container",
+            "pic": "https://tcdn.kaishustory.com/kstory/androidapkdir/image/1d6761c8-52b5-4e39-9cf9-042578318b76_info_w=378_h=325_s=30674.png"
+          }
+        ]
+      }
+    },
+    {
+      "element_id": 7000,
+      "title": "通知动画",
+      "children": {
+        "banner": [
+          {
+            "parentId": 7000,
+            "title": "应用内通知动画",
+            "element_type": "title"
+          }
+        ],
+        "container": [
+          {
+            "parentId": 7000,
+            "element_id": 7001,
+            "title": "动画1",
+            "element_type": "container",
+            "pic": "http:\/\/file.17gwx.com\/sqkb\/element\/2018\/03\/13\/666755aa77dc8126b4.jpeg"
+          },
+          {
+            "parentId": 7000,
+            "element_id": 7002,
+            "title": "动画2",
+            "element_type": "container",
+            "pic": "http:\/\/file.17gwx.com\/sqkb\/element\/2018\/03\/13\/666755aa77dc8126b4.jpeg"
+          },
+          {
+            "parentId": 7000,
+            "element_id": 7003,
+            "title": "动画3",
+            "element_type": "container",
+            "pic": "http:\/\/file.17gwx.com\/sqkb\/element\/2018\/03\/13\/666755aa77dc8126b4.jpeg"
+          },
+          {
+            "parentId": 7000,
+            "element_id": 7004,
+            "title": "动画4",
+            "element_type": "container",
+            "pic": "http:\/\/file.17gwx.com\/sqkb\/element\/2018\/03\/13\/666755aa77dc8126b4.jpeg"
+          },
+          {
+            "parentId": 7000,
+            "element_id": 7005,
+            "title": "动画5",
+            "element_type": "container",
+            "pic": "http:\/\/file.17gwx.com\/sqkb\/element\/2018\/03\/13\/666755aa77dc8126b4.jpeg"
+          },
+          {
+            "parentId": 7000,
+            "element_id": 7006,
+            "title": "动画6",
+            "element_type": "container",
+            "pic": "http:\/\/file.17gwx.com\/sqkb\/element\/2018\/03\/13\/666755aa77dc8126b4.jpeg"
+          },
+          {
+            "parentId": 7000,
+            "element_id": 7007,
+            "title": "动画7",
+            "element_type": "container",
+            "pic": "http:\/\/file.17gwx.com\/sqkb\/element\/2018\/03\/13\/666755aa77dc8126b4.jpeg"
+          }
+        ]
+      }
+    },
+    {
+      "element_id": 8000,
+      "title": "文字特效",
+      "children": {
+        "banner": [
+          {
+            "parentId":8000,
+            "title": "文字特效",
+            "element_type": "title"
+          }
+        ],
+        "container": [
+          {
+            "parentId": 8000,
+            "element_id": 8001,
+            "title": "粒子特效",
+            "element_type": "container",
+            "pic": "text_anim.gif"
+          },
+          {
+            "parentId": 8000,
+            "element_id": 8002,
+            "title": "火花特效",
+            "element_type": "container",
+            "pic": "text_anim.gif"
+          },
+          {
+            "parentId": 8000,
+            "element_id": 8003,
+            "title": "高斯模糊",
+            "element_type": "container",
+            "pic": "text_anim.gif"
+          },
+          {
+            "parentId": 8000,
+            "element_id": 8004,
+            "title": "文字掉落",
+            "element_type": "container",
+            "pic": "text_anim.gif"
+          },
+          {
+            "parentId": 8000,
+            "element_id": 8005,
+            "title": "线性缩放",
+            "element_type": "container",
+            "pic": "text_anim.gif"
+          },
+          {
+            "parentId": 8000,
+            "element_id": 8006,
+            "title": "跑马灯",
+            "element_type": "container",
+            "pic": "text_anim.gif"
+          },
+          {
+            "parentId": 8000,
+            "element_id": 8007,
+            "title": "火花特效2",
+            "element_type": "container",
+            "pic": "text_anim.gif"
+          },
+          {
+            "parentId": 8000,
+            "element_id": 8008,
+            "title": "霓虹灯",
+            "element_type": "container",
+            "pic": "text_anim.gif"
+          },
+          {
+            "parentId": 8000,
+            "element_id": 8009,
+            "title": "打印机",
+            "element_type": "container",
+            "pic": "text_anim.gif"
+          },
+          {
+            "parentId": 8000,
+            "element_id": 8010,
+            "title": "组合",
+            "element_type": "container",
+            "pic": "text_anim.gif"
+          }
+        ]
+      }
+    },
+    {
+      "element_id": 9000,
+      "title": "提示信息",
+      "children": {
+        "banner": [
+          {
+            "parentId": 9000,
+            "title": "Toast提示",
+            "element_type": "title"
+          }
+        ],
+        "container": [
+          {
+            "parentId": 9000,
+            "element_id": 9001,
+            "title": "结果正确提示",
+            "element_type": "container",
+            "pic": "http:\/\/file.17gwx.com\/sqkb\/element\/2018\/03\/13\/666755aa77dc8126b4.jpeg"
+          },
+          {
+            "parentId": 9000,
+            "element_id": 9002,
+            "title": "结果错误提示",
+            "element_type": "container",
+            "pic": "http:\/\/file.17gwx.com\/sqkb\/element\/2018\/03\/13\/666755aa77dc8126b4.jpeg"
+          }
+        ]
+      }
+    }
+  ]
+}

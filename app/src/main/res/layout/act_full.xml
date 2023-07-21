@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.wiser.animationlistdemo.audio.ScrollImageView
+        android:layout_width="match_parent"
+        android:id="@+id/ivCover"
+        android:transitionName="player_cover"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:scaleType="matrix"
+        android:layout_height="0dp"/>
+
+    <ImageView
+        android:id="@+id/back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="@dimen/ksl_dp_24"
+        android:layout_height="@dimen/ksl_dp_24"
+        android:layout_marginLeft="@dimen/ksl_dp_19"
+        android:layout_marginTop="@dimen/ksl_dp_35"
+        android:elevation="@dimen/ksl_dp_4"
+        android:src="@drawable/backw" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bottom_trans"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.google.android.material.slider.Slider
+        android:id="@+id/slider"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/ksl_dp_20"
+        android:layout_marginBottom="@dimen/ksl_dp_16"
+        android:indeterminate="false"
+        android:value="30"
+        android:valueFrom="0"
+        android:valueTo="100"
+        app:indicatorColor="@color/white"
+        app:labelBehavior="gone"
+        android:elevation="@dimen/ksl_dp_6"
+        app:layout_constraintBottom_toTopOf="@+id/ivPlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:thumbColor="@color/white"
+        app:trackColor="#ffffff" />
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivPlay"
+        android:layout_width="@dimen/ksl_dp_48"
+        android:layout_height="@dimen/ksl_dp_48"
+        android:layout_marginBottom="@dimen/ksl_dp_48"
+        android:src="@drawable/player"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:shapeAppearanceOverlay="@style/RoundedStyle50" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/ksl_dp_10"
+        android:text="00:10"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/slider"
+        app:layout_constraintTop_toBottomOf="@+id/slider" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/ksl_dp_10"
+        android:text="03:18"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/slider"
+        app:layout_constraintTop_toBottomOf="@+id/slider" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

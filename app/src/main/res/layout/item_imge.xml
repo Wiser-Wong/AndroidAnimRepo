@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="@dimen/ksl_dp_230"
+    android:layout_height="@dimen/ksl_dp_315"
+    android:layout_margin="@dimen/ksl_dp_10"
+    app:cardCornerRadius="@dimen/ksl_dp_15"
+    app:cardElevation="@dimen/ksl_dp_5"
+    app:cardMaxElevation="@dimen/ksl_dp_5"
+    app:layout_constraintDimensionRatio="3:4"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/cover"
+        android:layout_width="@dimen/ksl_dp_230"
+        android:layout_height="@dimen/ksl_dp_230"
+        android:elevation="@dimen/ksl_dp_10"
+        android:scaleType="centerCrop"
+        android:src="@drawable/a"
+        android:transitionName="cover"
+        android:translationX="@dimen/ksl_dp_80"
+        android:translationY="-50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearance="@style/RoundedStyle50" />
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/ksl_dp_21"
+        android:layout_marginTop="@dimen/ksl_dp_210"
+        android:layout_marginEnd="@dimen/ksl_dp_21"
+        android:elevation="3dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="凯叔讲故事"
+        android:textColor="#4a4a4a"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvSubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/ksl_dp_21"
+        android:layout_marginTop="@dimen/ksl_dp_260"
+        android:layout_marginEnd="@dimen/ksl_dp_21"
+        android:elevation="3dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="启发孩子的探索天性"
+        android:textColor="#4a4a4a"
+        android:textSize="20sp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="@dimen/ksl_dp_24"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/ksl_dp_14">
+
+        <com.wiser.animationlistdemo.home.BookMarkView
+            android:layout_width="match_parent"
+            android:id="@+id/bookMark"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvBookMark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="@dimen/ksl_dp_10"
+            android:paddingBottom="@dimen/ksl_dp_14"
+            android:text="故\n事"
+            android:textColor="#ffffff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

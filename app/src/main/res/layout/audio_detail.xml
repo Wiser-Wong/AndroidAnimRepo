@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/audioDetail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <ImageView
+        android:id="@+id/topBg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/top_bg"
+        app:layout_constraintDimensionRatio="772:1071"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <ImageView
+        android:id="@+id/ivSun"
+        android:layout_width="@dimen/ksl_dp_130"
+        android:layout_height="@dimen/ksl_dp_130"
+        android:layout_marginEnd="@dimen/ksl_dp_80"
+        android:src="@drawable/sun"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/shan" />
+
+    <ImageView
+        android:id="@+id/shan"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/shan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="769:1022"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/yun1"
+        android:layout_width="@dimen/ksl_dp_100"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/ksl_dp_150"
+        android:scaleType="fitXY"
+        android:src="@drawable/yun_2"
+        app:layout_constraintDimensionRatio="372:22"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/yun2"
+        android:layout_width="@dimen/ksl_dp_180"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/ksl_dp_45"
+        android:scaleType="fitXY"
+        android:src="@drawable/yun_1"
+        app:layout_constraintDimensionRatio="234:17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yun1" />
+
+    <ImageView
+        android:id="@+id/yun3"
+        android:layout_width="@dimen/ksl_dp_60"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/yun_3"
+        app:layout_constraintDimensionRatio="94:13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/yun1" />
+
+
+    <ImageView
+        android:id="@+id/leftIcon"
+        android:layout_width="@dimen/ksl_dp_62"
+        android:layout_height="@dimen/ksl_dp_62"
+        android:layout_marginStart="@dimen/ksl_dp_15"
+        android:layout_marginTop="@dimen/ksl_dp_30"
+        android:background="@drawable/icon5"
+        android:orientation="vertical"
+        android:elevation="@dimen/ksl_dp_6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/rightIcon"
+        android:elevation="@dimen/ksl_dp_6"
+        android:layout_width="@dimen/ksl_dp_62"
+        android:layout_height="@dimen/ksl_dp_62"
+        android:layout_marginTop="@dimen/ksl_dp_30"
+        android:layout_marginEnd="@dimen/ksl_dp_15"
+        android:background="@drawable/icon7"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/iv1"
+        android:layout_width="@dimen/ksl_dp_2"
+        android:layout_height="@dimen/ksl_dp_2"
+        android:src="@drawable/star"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/ksl_dp_17"
+        android:layout_marginTop="@dimen/ksl_dp_17"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/iv2"
+        android:layout_width="@dimen/ksl_dp_4"
+        android:layout_height="@dimen/ksl_dp_4"
+        android:src="@drawable/star"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/ksl_dp_88"
+        android:layout_marginTop="@dimen/ksl_dp_2"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <ImageView
+        android:id="@+id/iv3"
+        android:layout_width="@dimen/ksl_dp_3"
+        android:layout_height="@dimen/ksl_dp_3"
+        android:src="@drawable/star"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/ksl_dp_157"
+        android:layout_marginTop="@dimen/ksl_dp_33"
+        tools:layout_editor_absoluteX="157dp"
+        tools:layout_editor_absoluteY="33dp" />
+
+    <ImageView
+        android:id="@+id/iv4"
+        android:layout_width="@dimen/ksl_dp_8"
+        android:layout_height="@dimen/ksl_dp_8"
+        android:src="@drawable/star"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/ksl_dp_195"
+        android:layout_marginTop="@dimen/ksl_dp_3"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageView
+        android:id="@+id/iv5"
+        android:layout_width="@dimen/ksl_dp_4"
+        android:layout_height="@dimen/ksl_dp_4"
+        android:src="@drawable/star"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/ksl_dp_278"
+        android:layout_marginTop="@dimen/ksl_dp_7"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="278dp"
+        tools:layout_editor_absoluteY="7dp" />
+
+    <ImageView
+        android:id="@+id/iv6"
+        android:layout_width="@dimen/ksl_dp_10"
+        android:layout_height="@dimen/ksl_dp_10"
+        android:src="@drawable/star"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/ksl_dp_253"
+        android:layout_marginTop="@dimen/ksl_dp_54"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="283dp"
+        tools:layout_editor_absoluteY="54dp" />
+
+    <ImageView
+        android:id="@+id/iv7"
+        android:layout_width="@dimen/ksl_dp_5"
+        android:layout_height="@dimen/ksl_dp_5"
+        android:src="@drawable/star"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/ksl_dp_10"
+        android:layout_marginTop="@dimen/ksl_dp_12"
+        tools:layout_editor_absoluteX="374dp"
+        tools:layout_editor_absoluteY="12dp" />
+
+
+    <ImageView
+        android:id="@+id/iv8"
+        android:layout_width="@dimen/ksl_dp_8"
+        android:layout_height="@dimen/ksl_dp_8"
+        android:src="@drawable/star"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/ksl_dp_5"
+        android:layout_marginTop="@dimen/ksl_dp_54"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="283dp"
+        tools:layout_editor_absoluteY="54dp" />
+
+    <ImageView
+        android:id="@+id/moonbg"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/moonbg"
+        android:scaleType="centerCrop"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/menuPlay"
+            app:constraint_referenced_ids="ivPlayIc,seekL,seekR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/aav1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="#fffeff"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="36sp"
+            android:gravity="center"
+            android:text="天空之心,落日斜阳"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/aav2"
+            app:layout_constraintTop_toBottomOf="@+id/aav1"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="#feecfd"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/ksl_dp_15"
+            android:text="听晚霞落日余晖之音"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/ivPlayIc"
+            android:src="@drawable/icon9"
+            android:layout_marginTop="@dimen/ksl_dp_65"
+            app:layout_constraintTop_toBottomOf="@+id/aav2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="@dimen/ksl_dp_72"
+            android:layout_height="@dimen/ksl_dp_72"/>
+
+        <ImageView
+            android:id="@+id/seekL"
+            app:layout_constraintTop_toTopOf="@+id/ivPlayIc"
+            app:layout_constraintBottom_toBottomOf="@+id/ivPlayIc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/ivPlayIc"
+            android:src="@drawable/icon10"
+            android:layout_width="@dimen/ksl_dp_24"
+            android:layout_height="@dimen/ksl_dp_24"/>
+
+        <ImageView
+            android:id="@+id/seekR"
+            app:layout_constraintTop_toTopOf="@+id/ivPlayIc"
+            app:layout_constraintBottom_toBottomOf="@+id/ivPlayIc"
+            app:layout_constraintStart_toEndOf="@+id/ivPlayIc"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/icon11"
+            android:layout_width="@dimen/ksl_dp_24"
+            android:layout_height="@dimen/ksl_dp_24"/>
+
+        <ImageView
+            android:id="@+id/seekBar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivPlayIc"
+            android:layout_marginTop="@dimen/ksl_dp_40"
+            android:src="@drawable/progress_bg"
+            android:scaleType="fitXY"
+            android:layout_marginHorizontal="@dimen/ksl_dp_15"
+            app:layout_constraintDimensionRatio="744:48"
+            android:layout_marginBottom="@dimen/ksl_dp_70"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

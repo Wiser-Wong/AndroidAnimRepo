@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ticketbg">
+
+    <ImageView
+        android:id="@+id/ivback"
+        android:layout_width="@dimen/ksl_dp_24"
+        android:layout_height="@dimen/ksl_dp_24"
+        android:layout_marginStart="@dimen/ksl_dp_15"
+        android:layout_marginTop="@dimen/ksl_dp_35"
+        android:src="@drawable/backw"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.wiser.animationlistdemo.ticket.Tickets
+        android:id="@+id/tickets"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/ksl_dp_15"
+        android:layout_marginEnd="@dimen/ksl_dp_15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivback" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/ksl_dp_51"
+        android:gravity="center"
+        android:text="分享给好友"
+        android:textColor="#f6f8ff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivback"
+        app:layout_constraintTop_toTopOf="@+id/ivback" />
+
+    <ImageView
+        android:layout_width="@dimen/ksl_dp_24"
+        android:layout_height="@dimen/ksl_dp_24"
+        android:layout_marginEnd="@dimen/ksl_dp_19"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivback" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        app:shapeAppearance="@style/RoundedStyle50"
+        android:id="@+id/wx"
+        android:background="@color/white"
+        android:layout_width="@dimen/ksl_dp_48"
+        android:layout_height="@dimen/ksl_dp_48"
+        android:src="@drawable/wx"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        android:layout_marginBottom="@dimen/ksl_dp_48"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/py"
+        app:layout_constraintStart_toStartOf="parent" />
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/py"
+        app:shapeAppearance="@style/RoundedStyle50"
+        android:layout_marginStart="@dimen/ksl_dp_48"
+        android:layout_width="@dimen/ksl_dp_48"
+        android:layout_height="@dimen/ksl_dp_48"
+        android:src="@drawable/py"
+        android:background="@color/white"
+        android:layout_marginBottom="@dimen/ksl_dp_48"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/wx" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

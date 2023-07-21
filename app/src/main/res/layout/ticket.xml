@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="0dp"
+        android:id="@+id/card"
+        android:layout_height="0dp"
+        app:strokeColor="#9b9cb2"
+        app:strokeWidth="1dp"
+        app:shapeAppearance="@style/Round38Style"
+        android:background="@drawable/card_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+    </com.google.android.material.imageview.ShapeableImageView>
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="@dimen/ksl_dp_50"
+        android:id="@+id/leftDot"
+        app:layout_constraintTop_toTopOf="@+id/card"
+        app:layout_constraintBottom_toBottomOf="@+id/card"
+        app:layout_constraintStart_toStartOf="@+id/card"
+        android:background="#4f5164"
+        android:elevation="3dp"
+        app:shapeAppearance="@style/RoundedStyle50"
+        android:layout_height="@dimen/ksl_dp_50"/>
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="@dimen/ksl_dp_50"
+        android:id="@+id/rightDot"
+        app:layout_constraintTop_toTopOf="@+id/card"
+        app:layout_constraintBottom_toBottomOf="@+id/card"
+        app:layout_constraintEnd_toEndOf="@+id/card"
+        android:background="#4f5164"
+        app:shapeAppearance="@style/RoundedStyle50"
+        android:layout_height="@dimen/ksl_dp_50"/>
+
+    <View
+        android:id="@+id/line"
+        android:background="#9095a4"
+        app:layout_constraintStart_toEndOf="@+id/leftDot"
+        app:layout_constraintEnd_toStartOf="@+id/rightDot"
+        app:layout_constraintTop_toTopOf="@+id/leftDot"
+        app:layout_constraintBottom_toBottomOf="@+id/leftDot"
+        android:layout_width="0dp"
+        android:layout_height="2dp"/>
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        tools:text="凯叔讲故事"
+        android:gravity="center"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:textColor="#f6f8ff"
+        app:layout_constraintTop_toTopOf="@+id/card"
+        app:layout_constraintStart_toStartOf="@+id/card"
+        app:layout_constraintEnd_toEndOf="@+id/card"
+        app:layout_constraintBottom_toTopOf="@+id/line"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        app:layout_constraintTop_toBottomOf="@+id/line"
+        app:layout_constraintStart_toStartOf="@+id/line"
+        app:layout_constraintEnd_toEndOf="@+id/line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="@dimen/ksl_dp_15"
+        app:layout_constraintDimensionRatio="1:1"
+        android:src="@drawable/code"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

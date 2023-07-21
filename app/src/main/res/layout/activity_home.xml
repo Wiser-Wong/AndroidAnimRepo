@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bgView"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/ksl_dp_10">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/vtest"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:shapeAppearance="@style/RoundedStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="0dp"
+        app:tabIndicator="@drawable/inidicator"
+        app:tabSelectedTextColor="@color/color_13be58"
+        app:tabIndicatorColor="@color/color_13be58"
+        app:tabTextAppearance="@style/tab_text_size"
+        android:layout_height="@dimen/ksl_dp_48"
+        android:layout_marginTop="@dimen/ksl_dp_150"
+        android:background="#00000000"
+        app:layout_constraintEnd_toEndOf="@+id/vtest"
+        app:layout_constraintStart_toStartOf="@+id/vtest"
+        app:layout_constraintTop_toTopOf="@+id/vtest" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcList"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ksl_dp_15"
+        app:layout_constraintEnd_toEndOf="@+id/tablayout"
+        app:layout_constraintStart_toStartOf="@+id/tablayout"
+        app:layout_constraintTop_toBottomOf="@+id/tablayout" />
+
+    <TextView
+        android:textColor="#4a4a4a"
+        android:textSize="32sp"
+        android:layout_marginTop="@dimen/ksl_dp_30"
+        android:layout_marginStart="@dimen/ksl_dp_10"
+        android:lineSpacingMultiplier="1.2"
+        android:text="口袋神探6上线\n为孩子的成长打气"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <FrameLayout
+        android:id="@+id/topView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

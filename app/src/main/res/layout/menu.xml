@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/menu"
+    android:background="@drawable/menu_bg"
+    android:paddingBottom="@dimen/ksl_dp_100"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/l8"
+        android:src="@drawable/l8"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintDimensionRatio="462:103"
+        android:layout_marginHorizontal="@dimen/ksl_dp_15"
+        android:layout_marginTop="@dimen/ksl_dp_30"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <TextView
+        android:id="@+id/bgimge"
+        app:layout_constraintTop_toBottomOf="@+id/l8"
+        app:layout_constraintStart_toStartOf="@id/l8"
+        app:layout_constraintEnd_toEndOf="@+id/l8"
+        android:textSize="20sp"
+        android:text="Background image"
+        android:layout_width="0dp"
+        android:textColor="#f6f6fd"
+        android:layout_marginTop="@dimen/ksl_dp_15"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/listIcon"
+        app:layout_constraintTop_toBottomOf="@+id/bgimge"
+        app:layout_constraintStart_toStartOf="@id/l8"
+        app:layout_constraintEnd_toEndOf="@+id/l8"
+        android:layout_width="0dp"
+        android:layout_marginTop="@dimen/ksl_dp_15"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/lv1"
+            android:src="@drawable/l1"
+            android:layout_marginRight="@dimen/ksl_dp_5"
+            android:layout_width="@dimen/ksl_dp_60"
+            android:layout_height="@dimen/ksl_dp_60"/>
+        <ImageView
+            android:layout_marginRight="@dimen/ksl_dp_5"
+            android:id="@+id/lv2"
+            android:src="@drawable/l2"
+            android:layout_width="@dimen/ksl_dp_60"
+            android:layout_height="@dimen/ksl_dp_60"/>
+        <ImageView
+            android:layout_marginRight="@dimen/ksl_dp_5"
+            android:id="@+id/lv3"
+            android:src="@drawable/l3"
+            android:layout_width="@dimen/ksl_dp_60"
+            android:layout_height="@dimen/ksl_dp_60"/>
+        <ImageView
+            android:id="@+id/lv4"
+            android:layout_marginRight="@dimen/ksl_dp_5"
+            android:src="@drawable/l4"
+            android:layout_width="@dimen/ksl_dp_60"
+            android:layout_height="@dimen/ksl_dp_60"/>
+        <ImageView
+            android:id="@+id/lv5"
+            android:src="@drawable/l5"
+            android:layout_width="@dimen/ksl_dp_60"
+            android:layout_height="@dimen/ksl_dp_60"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bgsound"
+        app:layout_constraintTop_toBottomOf="@+id/listIcon"
+        app:layout_constraintStart_toStartOf="@id/l8"
+        app:layout_constraintEnd_toEndOf="@+id/l8"
+        android:textSize="20sp"
+        android:text="Background sounds"
+        android:layout_width="0dp"
+        android:textColor="#f6f6fd"
+        android:layout_marginTop="@dimen/ksl_dp_15"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/bgsound1"
+        app:layout_constraintTop_toBottomOf="@+id/bgsound"
+        app:layout_constraintStart_toStartOf="@id/l8"
+        app:layout_constraintEnd_toEndOf="@+id/l8"
+        android:textSize="16sp"
+        android:text="The music of the wind chimes"
+        android:layout_width="0dp"
+        android:textColor="#eff1f7"
+        android:paddingTop="@dimen/ksl_dp_8"
+        android:layout_marginTop="@dimen/ksl_dp_15"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/bgsound2"
+        app:layout_constraintTop_toBottomOf="@+id/bgsound1"
+        app:layout_constraintStart_toStartOf="@id/l8"
+        app:layout_constraintEnd_toEndOf="@+id/l8"
+        android:textSize="16sp"
+        android:paddingTop="@dimen/ksl_dp_8"
+        android:text="Sounds of Water"
+        android:layout_width="0dp"
+        android:textColor="#eff1f7"
+        android:layout_marginTop="@dimen/ksl_dp_15"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/r1"
+        app:layout_constraintDimensionRatio="75:42"
+        app:layout_constraintTop_toTopOf="@+id/bgsound1"
+        app:layout_constraintEnd_toEndOf="@id/l8"
+        android:src="@drawable/l7"
+        android:layout_width="@dimen/ksl_dp_60"
+        android:layout_height="0dp"/>
+
+    <ImageView
+        android:id="@+id/r2"
+        app:layout_constraintDimensionRatio="75:42"
+        app:layout_constraintTop_toTopOf="@+id/bgsound2"
+        app:layout_constraintEnd_toEndOf="@id/l8"
+        android:src="@drawable/l7"
+        android:layout_width="@dimen/ksl_dp_60"
+        android:layout_height="0dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:visibility="invisible"
+    tools:visibility="visible"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <ImageView
+        android:layout_marginTop="@dimen/ksl_dp_4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/ivPlayerRoot"
+        android:background="@drawable/mibg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+    
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_marginStart="@dimen/ksl_dp_15"
+        android:layout_marginTop="@dimen/ksl_dp_25"
+        android:id="@+id/cover"
+        android:src="@drawable/all_bg"
+        android:scaleType="centerCrop"
+        app:shapeAppearance="@style/RoundedStyle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="@dimen/ksl_dp_60"
+        android:layout_height="@dimen/ksl_dp_60"/>
+
+    <ImageView
+        android:id="@+id/icon3"
+        app:layout_constraintTop_toTopOf="@+id/cover"
+        app:layout_constraintBottom_toBottomOf="@+id/cover"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/icon3"
+        android:layout_marginEnd="@dimen/ksl_dp_70"
+        android:layout_width="@dimen/ksl_dp_24"
+        android:layout_height="@dimen/ksl_dp_24"/>
+
+    <ImageView
+        android:id="@+id/icon4"
+        app:layout_constraintTop_toTopOf="@+id/cover"
+        app:layout_constraintBottom_toBottomOf="@+id/cover"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/icon4"
+        android:layout_marginEnd="@dimen/ksl_dp_30"
+        android:layout_width="@dimen/ksl_dp_15"
+        android:layout_height="@dimen/ksl_dp_15"/>
+
+    <TextView
+        android:id="@+id/atvTitle"
+        app:layout_constraintTop_toTopOf="@+id/cover"
+        app:layout_constraintStart_toEndOf="@+id/cover"
+        android:layout_marginStart="@dimen/ksl_dp_10"
+        android:layout_width="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_marginTop="@dimen/ksl_dp_3"
+        android:text="天空之心,落日斜阳"
+        android:textStyle="bold"
+        android:textSize="@dimen/ksl_sp_16"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/atvSubTitle"
+        app:layout_constraintTop_toBottomOf="@+id/atvTitle"
+        app:layout_constraintStart_toEndOf="@+id/cover"
+        android:layout_marginStart="@dimen/ksl_dp_10"
+        android:layout_width="wrap_content"
+        android:textColor="#c4b1dc"
+        android:layout_marginTop="@dimen/ksl_dp_10"
+        android:text="听晚霞落日余晖之音"
+        android:textSize="@dimen/ksl_sp_12"
+        android:layout_height="wrap_content"/>
+    <View
+        android:id="@+id/ll"
+        android:background="#ffffff"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rl"
+        android:layout_width="0dp"
+        android:layout_marginTop="@dimen/ksl_dp_4"
+        android:layout_height="3dp"/>
+
+
+    <View
+        android:id="@+id/rl"
+        android:layout_width="0dp"
+        android:background="#5c5b65"
+        app:layout_constraintStart_toEndOf="@+id/ll"
+        app:layout_constraintTop_toTopOf="@+id/ll"
+        app:layout_constraintBottom_toBottomOf="@+id/ll"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="0dp"/>
+
+
+    <View
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/thum"
+        android:layout_width="@dimen/ksl_dp_10"
+        android:layout_height="@dimen/ksl_dp_10"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

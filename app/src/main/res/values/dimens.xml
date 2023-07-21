@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="dimen65">65dp</dimen>
+    <dimen name="dimen42">42dp</dimen>
+    <dimen name="dimen20">20dp</dimen>
+    <dimen name="dimen62">62dp</dimen>
+    <dimen name="dimen52">52dp</dimen>
+    <dimen name="dimen12">12dp</dimen>
+
+    <dimen name="jelly_view_size">120dp</dimen>
+    <dimen name="jelly_view_offset">3dp</dimen>
+    <dimen name="icon_size">32dp</dimen>
+    <dimen name="icon_full_size">64dp</dimen>
+    <dimen name="jelly_view_width">56dp</dimen>
+    <dimen name="icon_padding">16dp</dimen>
+</resources>

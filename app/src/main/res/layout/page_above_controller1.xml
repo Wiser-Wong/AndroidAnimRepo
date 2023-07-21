@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <View
+        android:layout_width="40dp"
+        android:layout_height="5dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shape_gray_raduis" />
+
+    <LinearLayout
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/ksl_dp_15"
+        android:orientation="horizontal"
+        android:paddingVertical="@dimen/ksl_dp_10"
+        android:focusable="true">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_catalogue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="目录"
+            android:paddingHorizontal="@dimen/ksl_dp_15"
+            android:paddingVertical="@dimen/ksl_dp_5"
+            android:textColor="#4a4a4a"
+            android:textSize="@dimen/ksl_sp_17"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评论"
+            android:paddingHorizontal="@dimen/ksl_dp_15"
+            android:paddingVertical="@dimen/ksl_dp_5"
+            android:textColor="#4a4a4a"
+            android:textSize="@dimen/ksl_sp_17"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <com.wiser.animationlistdemo.detailspage.CustomViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"/>
+
+    <com.wiser.animationlistdemo.detailspage.CustomRecyclerView1
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rlv_list"/>
+
+</LinearLayout>

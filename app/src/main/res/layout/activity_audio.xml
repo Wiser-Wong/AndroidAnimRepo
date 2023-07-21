@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/dark_blue">
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/homePage"
+        app:constraint_referenced_ids="container,topIv,tvTitle,tvSubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topIv">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/ksl_dp_100">
+
+            <LinearLayout
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/ksl_dp_15"
+                android:background="@drawable/soubg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/ksl_dp_5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="@dimen/ksl_dp_25"
+                    android:layout_height="@dimen/ksl_dp_25"
+                    android:layout_marginStart="@dimen/ksl_dp_15"
+                    android:src="@drawable/icon1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/ksl_dp_10"
+                    android:text="探索奇妙世界 ..."
+                    android:textColor="#9699a3"
+                    android:textSize="@dimen/ksl_dp_15" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvRecommend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ksl_dp_15"
+                android:layout_marginTop="@dimen/ksl_dp_20"
+                android:text="每日推荐"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/ksl_dp_21"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/search" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="@dimen/ksl_dp_10"
+                app:layout_constraintTop_toBottomOf="@+id/tvRecommend"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/ksl_dp_11"
+                android:id="@+id/rcAudioList"
+                android:layout_height="wrap_content"/>
+
+
+
+            <TextView
+                android:id="@+id/tvCat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ksl_dp_15"
+                android:layout_marginTop="@dimen/ksl_dp_20"
+                android:text="专属内容"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/ksl_dp_21"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rcAudioList" />
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/ksl_dp_15"
+                android:layout_marginTop="@dimen/ksl_dp_15"
+                android:layout_marginEnd="@dimen/ksl_dp_10"
+                android:background="@drawable/a"
+                app:layout_constraintDimensionRatio="1:1"
+                app:shapeAppearance="@style/RoundedStyle50"
+                app:layout_constraintEnd_toStartOf="@+id/iv2"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvCat" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="@dimen/ksl_dp_15"
+                android:background="@drawable/b"
+                app:shapeAppearance="@style/RoundedStyle50"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iv1"
+                app:layout_constraintTop_toTopOf="@+id/iv1" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/ksl_dp_15"
+                android:layout_marginTop="@dimen/ksl_dp_15"
+                android:layout_marginEnd="@dimen/ksl_dp_10"
+                android:background="@drawable/c"
+                app:shapeAppearance="@style/RoundedStyle50"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toStartOf="@+id/iv4"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv1" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv4"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="@dimen/ksl_dp_15"
+                app:shapeAppearance="@style/RoundedStyle50"
+                android:background="@drawable/d"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iv3"
+                app:layout_constraintTop_toTopOf="@+id/iv3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+<!--顶部开始 ###################-->
+
+    <ImageView
+        android:id="@+id/topIv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ksl_dp_145"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/ksl_dp_15"
+        android:layout_marginTop="@dimen/ksl_dp_45"
+        android:text="Hello 凯唐唐!"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/ksl_sp_25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSubTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/ksl_dp_15"
+        android:layout_marginEnd="@dimen/ksl_dp_15"
+        android:layout_marginTop="@dimen/ksl_dp_15"
+        android:text="当温柔的春风吹过，花儿开始绽放，这个季节充满了希望和喜悦。"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:singleLine="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:textColor="#a3a7b4"
+        android:textSize="@dimen/ksl_sp_14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+
+    <ImageView
+        android:id="@+id/topIcon"
+        android:layout_width="@dimen/ksl_dp_22"
+        android:layout_height="@dimen/ksl_dp_22"
+        android:layout_marginEnd="@dimen/ksl_dp_15"
+        android:src="@drawable/icon2"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvTitle" />
+    <!--miniPlayer ###################-->
+    <include
+        android:id="@+id/miniContainer"
+        layout="@layout/mini_player"
+        tools:visibility="invisible"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:id="@+id/nvg"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/ksl_dp_15"
+        android:background="@drawable/nav_bg"
+        android:paddingTop="@dimen/ksl_dp_10"
+        android:paddingBottom="@dimen/ksl_dp_15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/nv1"
+            android:layout_width="@dimen/ksl_dp_25"
+            android:layout_height="@dimen/ksl_dp_25"
+            android:src="@drawable/home"
+            app:layout_constraintEnd_toStartOf="@+id/nv2"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/nv2"
+            android:layout_width="@dimen/ksl_dp_25"
+            android:layout_height="@dimen/ksl_dp_25"
+            android:src="@drawable/info"
+            app:layout_constraintEnd_toStartOf="@+id/nv3"
+            app:layout_constraintStart_toEndOf="@+id/nv1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/nv3"
+            android:layout_width="@dimen/ksl_dp_25"
+            android:layout_height="@dimen/ksl_dp_25"
+            android:src="@drawable/international"
+            app:layout_constraintEnd_toStartOf="@+id/nv2"
+            app:layout_constraintStart_toEndOf="@+id/nv4"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/nv4"
+            android:layout_width="@dimen/ksl_dp_25"
+            android:layout_height="@dimen/ksl_dp_25"
+            android:src="@drawable/user"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/nv3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/ntv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ksl_dp_2"
+            android:text="故事"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:textSize="@dimen/ksl_sp_12"
+            app:layout_constraintEnd_toEndOf="@+id/nv1"
+            app:layout_constraintStart_toStartOf="@+id/nv1"
+            app:layout_constraintTop_toBottomOf="@+id/nv1" />
+
+        <TextView
+            android:id="@+id/ntv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ksl_dp_2"
+            android:text="收听"
+            android:textColor="#5b5c71"
+            android:textSize="@dimen/ksl_sp_12"
+            app:layout_constraintEnd_toEndOf="@+id/nv2"
+            app:layout_constraintStart_toStartOf="@+id/nv2"
+            app:layout_constraintTop_toBottomOf="@+id/nv2" />
+
+        <TextView
+            android:id="@+id/ntv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ksl_dp_2"
+            android:text="国学"
+            android:textColor="#5b5c71"
+            android:textSize="@dimen/ksl_sp_12"
+            app:layout_constraintEnd_toEndOf="@+id/nv3"
+            app:layout_constraintStart_toStartOf="@+id/nv3"
+            app:layout_constraintTop_toBottomOf="@+id/nv3" />
+
+        <TextView
+            android:id="@+id/ntv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ksl_dp_2"
+            android:text="我的"
+            android:textColor="#5b5c71"
+            android:textSize="@dimen/ksl_sp_12"
+            app:layout_constraintEnd_toEndOf="@+id/nv4"
+            app:layout_constraintStart_toStartOf="@+id/nv4"
+            app:layout_constraintTop_toBottomOf="@+id/nv4" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <include
+        android:visibility="gone"
+        android:id="@+id/audioContainer"
+        layout="@layout/audio_detail"/>
+
+    <include
+        android:id="@+id/moon"
+        android:visibility="gone" layout="@layout/moon"></include>
+
+    <include
+        android:id="@+id/audioMenu"
+        android:visibility="gone" layout="@layout/menu"></include>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BaseBezier2">
+        <attr name="custom_size2" format="dimension" />
+        <attr name="custom_color2" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="BaseBezier3">
+        <attr name="custom_size3" format="dimension" />
+        <attr name="custom_color3" format="color" />
+</declare-styleable>
+
+    <declare-styleable name="WaveView">
+        <attr name="waveview_color" format="color" />
+    </declare-styleable>
+    <!--3D裸眼效果-->
+    <declare-styleable name="SensorLayoutStyle">
+        <attr name="AccelerateRatio" format="float" />
+    </declare-styleable>
+</resources>
+

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#90000000"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/ksl_dp_80"
+        android:background="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/mg"
+        android:layout_width="@dimen/ksl_dp_68"
+        android:layout_height="@dimen/ksl_dp_68"
+        android:layout_marginBottom="@dimen/ksl_dp_50"
+        android:background="@drawable/sun"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+         />
+
+
+    <LinearLayout
+        android:id="@+id/m3"
+        android:layout_width="@dimen/ksl_dp_60"
+        android:layout_height="@dimen/ksl_dp_60"
+        android:background="@drawable/m3"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/ksl_dp_6"
+        app:layout_constraintTop_toTopOf="@+id/mg"
+        app:layout_constraintEnd_toEndOf="@+id/mg"
+        app:layout_constraintStart_toStartOf="@+id/mg"
+        >
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/mm3"
+            android:src="@drawable/iconvideo"
+            android:layout_width="@dimen/ksl_dp_30"
+            android:layout_height="@dimen/ksl_dp_30"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/m2"
+        android:layout_width="@dimen/ksl_dp_60"
+        android:layout_height="@dimen/ksl_dp_60"
+        android:background="@drawable/m2"
+        android:layout_marginTop="@dimen/ksl_dp_4"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="@+id/mg"
+        app:layout_constraintEnd_toEndOf="@+id/mg"
+        app:layout_constraintStart_toStartOf="@+id/mg"
+     >
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/mm2"
+            android:src="@drawable/iconcamera"
+            android:layout_width="@dimen/ksl_dp_30"
+            android:layout_height="@dimen/ksl_dp_30"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/m1"
+        android:layout_width="@dimen/ksl_dp_60"
+        android:layout_height="@dimen/ksl_dp_60"
+        android:background="@drawable/m1"
+        android:layout_marginTop="@dimen/ksl_dp_2"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="@+id/mg"
+        app:layout_constraintEnd_toEndOf="@+id/mg"
+        app:layout_constraintStart_toStartOf="@+id/mg"
+         >
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/mm1"
+            android:src="@drawable/iconpic"
+            android:layout_width="@dimen/ksl_dp_30"
+            android:layout_height="@dimen/ksl_dp_30"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/mMenuIcon"
+        app:layout_constraintTop_toTopOf="@+id/mg"
+        app:layout_constraintBottom_toBottomOf="@+id/mg"
+        app:layout_constraintStart_toStartOf="@+id/mg"
+        app:layout_constraintEnd_toEndOf="@+id/mg"
+        android:src="@drawable/iconp1"
+        android:layout_width="@dimen/ksl_dp_30"
+        android:layout_height="@dimen/ksl_dp_30"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

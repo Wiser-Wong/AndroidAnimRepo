@@ -1,0 +1,45 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        maven {
+            allowInsecureProtocol true
+            url "http://android-internal.kaishujia.com:8081/repository/kaishumilestone/"
+        }
+
+
+        maven { url 'https://jitpack.io' }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        maven {
+            allowInsecureProtocol true
+            url "http://android-internal.kaishujia.com:8081/repository/kaishumilestone/"
+        }
+        maven {
+            allowInsecureProtocol true
+            url "http://android-internal.kaishujia.com:8081/repository/thirdparty/"
+        }
+
+        maven { url "https://jitpack.io" }
+
+        maven { url "https://maven.aliyun.com/repository/public" }
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+        maven {
+            url "https://nexus2.tingyun.com/nexus/content/repositories/snapshots/"
+        }
+    }
+}
+rootProject.name = "AndroidAnimRepo"
+include ':app'
+include ':asyncAni'
+include ':bare'
+include ':secondfloor'

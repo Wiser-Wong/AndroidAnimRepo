@@ -1,0 +1,182 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/root">
+    <View
+        android:id="@+id/night_bg"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@mipmap/bbg"
+        android:alpha="0"
+        />
+    <View
+        android:id="@+id/day_bg"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/skybg"
+        />
+
+    <com.custom.custombasebezier.customview.SinusoidalWaveView
+        android:id="@+id/bezier_curve_chart"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_marginTop="150dp" />
+
+    <com.custom.custombasebezier.customview.SensorLayout
+        android:id="@+id/sensorlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        >
+    <FrameLayout
+        android:id="@+id/night"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PILO CONSTIN"
+            android:textSize="33dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="17dp"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/moon"
+            android:layout_gravity="right"
+            android:layout_margin="10dp"
+            />
+
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:clipChildren="false"
+        >
+        <ImageView
+            android:id="@+id/rainbow"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="40dp"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/rainbow" />
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="100dp"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/yellow" />
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="50dp"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/blue" />
+
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/yellow" />
+
+        <ImageView
+            android:id="@+id/img4"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-50dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/purple" />
+
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/img5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/bg_serarch"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Search"
+            android:textColor="#bfff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/search" />
+    </LinearLayout>
+    </com.custom.custombasebezier.customview.SensorLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/b1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="20dp"
+            android:src="@mipmap/i1" />
+
+        <ImageView
+            android:id="@+id/b2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="20dp"
+            android:src="@mipmap/i2" />
+
+        <ImageView
+            android:id="@+id/b3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="20dp"
+            android:src="@mipmap/i1" />
+
+        <ImageView
+            android:id="@+id/b4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="20dp"
+            android:src="@mipmap/i2" />
+
+    </LinearLayout>
+</FrameLayout>

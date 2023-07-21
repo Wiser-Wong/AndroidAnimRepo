@@ -1,0 +1,207 @@
+{
+  "discover_list": [
+    {
+      "element_id": 1000,
+      "title": "位移",
+      "children": {
+        "banner": [
+          {
+            "parentId": 1000,
+            "title": "位移动画",
+            "element_type": "title"
+          }
+        ],
+        "container": [
+          {
+            "parentId": 1000,
+            "element_id": "1001",
+            "title": "左右移动",
+            "element_type": "container",
+            "pic": "http://t07img.yangkeduo.com/images/2018-04-25/97cedd15e01364cd56bfb7d55e9c8e92.png"
+          },
+          {
+            "parentId": 1000,
+            "element_id": "1002",
+            "title": "上下移动",
+            "element_type": "container",
+            "pic": "http://t07img.yangkeduo.com/images/2018-04-25/97cedd15e01364cd56bfb7d55e9c8e92.png"
+          }
+        ]
+      }
+    },
+    {
+      "element_id": 2000,
+      "title": "旋转",
+      "children": {
+        "banner": [
+          {
+            "parentId": 2000,
+            "title": "旋转动画",
+            "element_type": "title"
+          }
+        ],
+        "container": [
+          {
+            "parentId": 2000,
+            "element_id": "2001",
+            "title": "旋转动画",
+            "element_type": "container",
+            "pic": "http://t07img.yangkeduo.com/images/2018-04-25/97cedd15e01364cd56bfb7d55e9c8e92.png"
+          }
+        ]
+      }
+    },
+    {
+      "element_id": 3000,
+      "title": "缩放",
+      "children": {
+        "banner": [
+          {
+            "parentId": 3000,
+            "title": "缩放动画",
+            "element_type": "title"
+          }
+        ],
+        "container": [
+          {
+            "parentId": 3000,
+            "element_id": 3001,
+            "title": "缩放动画1",
+            "element_type": "container",
+            "pic": "http://t07img.yangkeduo.com/images/2018-04-25/97cedd15e01364cd56bfb7d55e9c8e92.png"
+          },
+          {
+            "parentId": 3000,
+            "element_id": 3002,
+            "title": "缩放动画2",
+            "element_type": "container",
+            "pic": "http://t09img.yangkeduo.com/images/2018-04-12/0cf6d11479efdc94c6ed375ebcefae8d.jpeg"
+          }
+        ]
+      }
+    },
+    {
+      "element_id": 4000,
+      "title": "卡片",
+      "children": {
+        "banner": [
+          {
+            "parentId": 4000,
+            "title": "卡片动画",
+            "element_type": "title"
+          }
+        ],
+        "container": [
+          {
+            "parentId": 4000,
+            "element_id": 4001,
+            "title": "图卡分享",
+            "element_type": "container",
+            "pic": "http://t02img.yangkeduo.com/images/2018-04-24/7c56f4aa33866373100687a1355e7519.png"
+          },
+          {
+            "parentId": 4000,
+            "element_id": 4002,
+            "title": "组合专辑",
+            "element_type": "container",
+            "pic": "http://t02img.yangkeduo.com/images/2018-04-24/7c56f4aa33866373100687a1355e7519.png"
+          }
+        ]
+      }
+    },
+    {
+      "element_id": 5000,
+      "title": "播放器",
+      "children": {
+        "banner": [
+          {
+            "parentId": 5000,
+            "title": "播放器动画",
+            "element_type": "title"
+          }
+        ],
+        "container": [
+          {
+            "parentId": 5000,
+            "element_id": 5001,
+            "title": "叫早哄睡",
+            "element_type": "container",
+            "pic": "http://t08img.yangkeduo.com/images/2018-04-03/55384b5db25f538f2a6c8f1e2278a89a.png"
+          },
+          {
+            "parentId": 5000,
+            "element_id": 5002,
+            "title": "全屏播放器",
+            "element_type": "container",
+            "pic": "http://t01img.yangkeduo.com/images/2018-03-08/5ac199f6a2d101db9d8bb041b4093452.png"
+          },
+          {
+            "parentId": 5000,
+            "element_id": 5003,
+            "title": "小图播放器",
+            "element_type": "container",
+            "pic": "http://t10img.yangkeduo.com/images/2018-04-03/22b4c59188ba26a02db1144a22c4515e.png"
+          }
+        ]
+      }
+    },
+    {
+      "element_id": 6000,
+      "title": "通知动画",
+      "children": {
+        "banner": [
+          {
+            "parentId": 6000,
+            "title": "应用内通知动画",
+            "element_type": "title"
+          }
+        ],
+        "container": [
+          {
+            "parentId": 6000,
+            "element_id": 6001,
+            "title": "标准动画",
+            "element_type": "container",
+            "pic": "http:\/\/file.17gwx.com\/sqkb\/element\/2018\/03\/13\/666755aa77dc8126b4.jpeg"
+          },
+          {
+            "parentId": 6000,
+            "element_id": 6002,
+            "title": "左进左出",
+            "element_type": "container",
+            "pic": "http:\/\/file.17gwx.com\/sqkb\/element\/2018\/03\/13\/666755aa77dc8126b4.jpeg"
+          },
+          {
+            "parentId": 6000,
+            "element_id": 6002,
+            "title": "左进右出",
+            "element_type": "container",
+            "pic": "http:\/\/file.17gwx.com\/sqkb\/element\/2018\/03\/13\/666755aa77dc8126b4.jpeg"
+          }
+        ]
+      }
+    },
+    {
+      "element_id": 7000,
+      "title": "护肤",
+      "children": {
+        "banner": [
+          {
+            "parentId": 6000,
+            "title": "护肤",
+            "element_type": "title"
+          }
+        ],
+        "container": [
+          {
+            "parentId": 7000,
+            "element_id": 21987,
+            "title": "洗面奶",
+            "element_type": "container",
+            "pic": "http:\/\/file.17gwx.com\/sqkb\/element\/2018\/03\/13\/518765aa77fa54a5a5.jpeg",
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--波纹动画空间的属性-->
+    <declare-styleable name="WaveView">
+        <attr name="interval_time" format="integer" /> <!--间隔时间-->
+        <attr name="wave_count" format="integer" /> <!--波纹的数量-->
+        <attr name="center_drawable" format="reference" /> <!--波纹中心的图片-->
+        <attr name="wave_circle_color" format="color" />
+        <attr name="wave_circle_width" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="ExpandedView">
+        <attr name="back_left_top_radius" format="dimension" />
+        <attr name="back_right_top_radius" format="dimension" />
+        <attr name="back_left_bottom_radius" format="dimension" />
+        <attr name="back_right_bottom_radius" format="dimension" />
+        <attr name="back_border_color" format="color" />
+        <attr name="back_border_width" format="float" />
+        <attr name="background_color" format="color" />
+        <attr name="drawer_duration" format="float" /> <!--折叠展开的时间-->
+        <attr name="roll_duration" format="float" /><!--文字翻滚的时间-->
+        <attr name="text_padding_left" format="dimension" />
+        <attr name="text_padding_right" format="dimension" />
+        <attr name="fore_text" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="JellyToolbar">
+        <attr name="title" format="string" />
+        <attr name="titleTextColor" format="color" />
+        <attr name="icon" format="reference" />
+        <attr name="cancelIcon" format="reference" />
+        <attr name="startColor" format="color" />
+        <attr name="endColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="RealtimeBlurView">
+        <attr name="realtimeBlurRadius" format="dimension"/>
+        <attr name="realtimeDownsampleFactor" format="float"/>
+        <attr name="realtimeOverlayColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="ElevationImageView">
+        <attr name="compatEvelation" format="dimension"/>
+        <attr name="clipShadow" format="boolean"/>
+        <attr name="isTranslucent" format="boolean"/>
+        <attr name="forceClip" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="ShadowContainer">
+        <attr name="container_shadowBackgroundColor" format="color" />
+        <attr name="container_shadowColor" format="color" />
+        <attr name="container_shadowRadius" format="dimension" />
+        <attr name="container_shadowRoundRadius" format="dimension" />
+        <attr name="container_shadowShape">
+            <flag name="container_rectangle" value="0x0001" />
+            <flag name="container_round_rectangle" value="0x0100" />
+        </attr>
+        <attr name="container_shadowSide">
+            <flag name="container_all" value="0x1111" />
+            <flag name="container_left" value="0x0001" />
+            <flag name="container_top" value="0x0010" />
+            <flag name="container_right" value="0x0100" />
+            <flag name="container_bottom" value="0x1000" />
+        </attr>
+        <attr name="container_round_corner">
+            <flag name="container_corner_all" value="0x1111" />
+            <flag name="container_corner_leftTop" value="0x0001" />
+            <flag name="container_corner_leftBottom" value="0x0010" />
+            <flag name="container_corner_rightTop" value="0x0100" />
+            <flag name="container_corner_rightBottom" value="0x1000" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="GangedScrollListController">
+        <attr name="sfc_friction_value" format="float"/>
+        <attr name="sfc_overlap_distance" format="dimension|float"/>
+        <attr name="sfc_header_height" format="dimension|float"/>
+        <attr name="sfc_show_item" format="integer">
+            <enum name="sfc_one_floor" value="0"/>
+            <enum name="sfc_two_floor" value="1"/>
+        </attr>
+        <attr name="sfc_pull_refresh_distance" format="dimension|reference"/>
+        <attr name="sfc_pull_into_two_floor_distance" format="dimension|reference"/>
+        <attr name="sfc_is_intercept_one_floor_touch" format="boolean"/>
+        <attr name="sfc_is_refreshing_back_anim" format="boolean"/>
+        <attr name="sfc_is_over" format="boolean"/>
+        <attr name="sfc_is_no_second_floor" format="boolean"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="StickyScrollView">
+        <attr name="stuckShadowHeight" format="dimension" />
+        <attr name="stuckShadowDrawable" format="reference" />
+    </declare-styleable>
+</resources>

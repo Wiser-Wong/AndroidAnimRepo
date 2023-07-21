@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/ivback"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/ksl_dp_35"
+        android:layout_marginStart="@dimen/ksl_dp_15"
+        android:src="@drawable/back"
+        android:layout_width="@dimen/ksl_dp_24"
+        android:layout_height="@dimen/ksl_dp_24"/>
+
+    <TextView
+        android:id="@+id/cardTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="#4a4a4a"
+        android:layout_marginStart="@dimen/ksl_dp_15"
+        android:layout_marginTop="@dimen/ksl_dp_25"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivback"
+        tools:text="声律启蒙" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="0dp"
+        android:id="@+id/rcList"
+        android:layout_marginTop="@dimen/ksl_dp_35"
+        app:layout_constraintTop_toBottomOf="@+id/cardTitle"
+        app:layout_constraintStart_toStartOf="@+id/cardTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="@dimen/ksl_dp_15"
+        android:layout_height="0dp"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp"
+        android:elevation="0dp"
+        android:id="@+id/btnCard"
+        android:transitionName="btnbuy"
+        app:cardBackgroundColor="#bcc5e6"
+        app:cardCornerRadius="@dimen/ksl_dp_30"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="@dimen/ksl_dp_20"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="@dimen/ksl_dp_20"
+            android:id="@+id/btnSelected"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:text="购买会员"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

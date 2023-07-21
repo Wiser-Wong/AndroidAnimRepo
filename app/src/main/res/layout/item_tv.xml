@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/ksl_dp_5"
+    tools:ignore="MissingDefaultResource">
+<com.google.android.material.card.MaterialCardView
+    android:layout_width="0dp"
+    android:id="@+id/card"
+    android:elevation="0dp"
+    app:cardCornerRadius="@dimen/ksl_dp_15"
+    app:layout_constraintDimensionRatio="774:630"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_height="0dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:gravity="center"
+        android:id="@+id/tv"
+        app:shapeAppearance="@style/RoundStyle12"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <View
+        android:id="@+id/cc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

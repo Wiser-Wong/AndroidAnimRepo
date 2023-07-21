@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/icon_padding"
+    android:paddingRight="@dimen/icon_padding">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:padding="@dimen/icon_padding"
+        android:layout_centerVertical="true"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/cancelIcon"
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:padding="@dimen/icon_padding"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/icon_padding"
+        android:layout_marginRight="@dimen/icon_padding"
+        android:layout_toEndOf="@+id/icon"
+        android:layout_toLeftOf="@+id/cancelIcon"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_toStartOf="@+id/cancelIcon" />
+
+</RelativeLayout>

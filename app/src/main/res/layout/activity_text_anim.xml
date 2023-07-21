@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_anim_text"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <com.wiser.animationlistdemo.textanim.text.AnimTextView
+            android:id="@+id/tv_anim_text"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#000"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="30sp" />
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickAnvil"
+        android:text="anvil" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickSparkle"
+        android:text="sparkle" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickPixelate"
+        android:text="pixelate" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickFall"
+        android:text="fall" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickScale"
+        android:text="scale" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickEvaporate"
+        android:text="evaporate" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickBurn"
+        android:text="burn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickRainBow"
+        android:text="rainBow" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickPrint"
+        android:text="print" />
+
+</LinearLayout>

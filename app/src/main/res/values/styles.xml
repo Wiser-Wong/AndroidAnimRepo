@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="RoundedStyle">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+    </style>
+    <style name="RoundedStyle50">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="RoundedCardView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="tab_text_size">
+        <item name="android:textSize">@dimen/ksl_sp_16</item>
+    </style>
+
+    <style name="RoundStyle">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/ksl_dp_36</item>
+    </style>
+
+    <style name="RoundStyle12">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/ksl_dp_12</item>
+    </style>
+
+    <style name="RoundStyle5">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/ksl_dp_5</item>
+    </style>
+    <style name="RoundStyle15">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/ksl_dp_15</item>
+    </style>
+
+    <style name="RoundLeftBottomStyle">
+        <item name="cornerFamily">rounded</item>
+
+        <item name="cornerSizeBottomLeft">@dimen/ksl_dp_28</item>
+    </style>
+
+    <declare-styleable name="NineGridView">
+        <attr name="horizontalSpacing" format="dimension" />
+        <attr name="verticalSpacing" format="dimension" />
+    </declare-styleable>
+    <style name="RoundTopLeftStyle">
+        <item name="cornerFamily">rounded</item>
+
+        <item name="cornerSizeTopLeft">@dimen/ksl_dp_28</item>
+    </style>
+
+    <style name="RoundTopLeftRightStyle12">
+        <item name="cornerFamily">rounded</item>
+
+        <item name="cornerSizeTopLeft">@dimen/ksl_dp_12</item>
+        <item name="cornerSizeTopRight">@dimen/ksl_dp_12</item>
+    </style>
+    <style name="RoundTopLeftRightStyle">
+        <item name="cornerFamily">rounded</item>
+
+        <item name="cornerSizeTopLeft">@dimen/ksl_dp_28</item>
+        <item name="cornerSizeTopRight">@dimen/ksl_dp_28</item>
+    </style>
+    <style name="RoundBottomLeftRightStyle">
+        <item name="cornerFamily">rounded</item>
+
+        <item name="cornerSizeBottomLeft">@dimen/ksl_dp_28</item>
+        <item name="cornerSizeBottomRight">@dimen/ksl_dp_28</item>
+    </style>
+
+    <style name="Round38Style">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/ksl_dp_38</item>
+    </style>
+
+    <!--自定义seekbarstyle-->
+    <style name="CustomSeekbarStyle" >
+        <item name="android:maxHeight">5dp</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/seekbar_progress_drawable</item>
+        <item name="android:minHeight">3dp</item>
+        <item name="android:thumb">@drawable/thumb</item>
+    </style>
+
+    <style name="comCornerStyle">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">30%</item>
+        <item name="cornerSizeBottomLeft">5%</item>
+        <item name="cornerSizeTopLeft">5%</item>
+        <item name="cornerSizeBottomRight">5%</item>
+    </style>
+
+    <style name="comCornerStyle1">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">30%</item>
+        <item name="cornerSizeBottomLeft">5%</item>
+        <item name="cornerSizeTopLeft">5%</item>
+        <item name="cornerSizeBottomRight">5%</item>
+    </style>
+
+
+    <style name="comCornerStyle2">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">5%</item>
+        <item name="cornerSizeBottomLeft">5%</item>
+        <item name="cornerSizeTopLeft">5%</item>
+        <item name="cornerSizeBottomRight">5%</item>
+    </style>
+
+</resources>

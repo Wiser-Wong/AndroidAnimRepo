@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <ImageView
+        android:id="@+id/root_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon9999"
+        android:transitionName="root_image" />
+
+    <ImageView
+        android:id="@+id/grass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon10111"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ImageView
+        android:id="@+id/left_first_look"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/ksl_dp_140"
+        android:layout_marginBottom="@dimen/ksl_dp_120"
+        android:rotation="45"
+        android:src="@drawable/icon_children_lock_ip_left"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageView
+        android:id="@+id/left_right_look"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/ksl_dp_300"
+        android:layout_marginBottom="@dimen/ksl_dp_80"
+        android:src="@drawable/icon_children_lock_ip_right"
+        android:visibility="invisible"
+        android:rotation="-45"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <View
+        android:id="@+id/check_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:background="#7f00" />
+
+    <TextView
+        android:id="@+id/tv_tocal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ksl_dp_200"
+        android:text="3 + 4 x 9 = ...."
+        android:textSize="@dimen/ksl_sp_40"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/calculator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/ksl_dp_60"
+        android:overScrollMode="never"
+        android:layout_marginTop="@dimen/ksl_dp_60"
+        app:layout_constraintTop_toBottomOf="@id/tv_tocal" />
+
+    <ImageView
+        android:id="@+id/ani_right_left"
+        android:layout_width="@dimen/ksl_dp_150"
+        android:layout_height="@dimen/ksl_dp_150"
+        android:layout_marginLeft="@dimen/ksl_dp_20"
+        android:rotation="-30"
+        android:visibility="invisible"
+        android:src="@drawable/icon_children_correct_list_4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ani_right_right"
+        android:layout_width="@dimen/ksl_dp_180"
+        android:layout_height="@dimen/ksl_dp_180"
+        android:rotation="30"
+        android:visibility="invisible"
+        android:src="@drawable/icon_children_lock_ip_correct_right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ani_wrong_left"
+        android:layout_width="@dimen/ksl_dp_150"
+        android:layout_height="@dimen/ksl_dp_150"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/icon_children_lock_ip_error_left"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageView
+        android:id="@+id/ani_wrong_right"
+        android:layout_width="@dimen/ksl_dp_180"
+        android:layout_height="@dimen/ksl_dp_180"
+        android:src="@drawable/icon_children_lock_ip_error_right"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/score_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

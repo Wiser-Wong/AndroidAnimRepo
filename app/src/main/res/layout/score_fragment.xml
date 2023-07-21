@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:background="#90b455">
+
+    <ImageView
+        android:id="@+id/imClose"
+        android:layout_width="@dimen/ksl_dp_30"
+        android:layout_height="@dimen/ksl_dp_30"
+        android:layout_marginLeft="@dimen/ksl_dp_20"
+        android:layout_marginTop="@dimen/ksl_dp_40"
+        android:src="@drawable/baseline_close_24"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/bg1"
+        android:layout_width="@dimen/ksl_dp_260"
+        android:layout_height="@dimen/ksl_dp_260"
+        android:layout_marginTop="@dimen/ksl_dp_120"
+        android:background="@drawable/icon20"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.github.lzyzsd.circleprogress.ArcProgress
+            android:id="@+id/arc_progress"
+            android:layout_width="@dimen/ksl_dp_180"
+            android:layout_height="@dimen/ksl_dp_180"
+            android:layout_gravity="center"
+            app:arc_bottom_text="Poin"
+            app:arc_bottom_text_size="@dimen/ksl_sp_30"
+            app:arc_finished_color="@color/teal_200"
+            app:arc_stroke_width="@dimen/ksl_dp_10"
+            app:arc_text_color="#fff"
+            app:arc_text_size="70sp"
+            app:arc_unfinished_color="#fff"
+            custom:arc_progress="89" />
+
+        <TextView
+            android:layout_width="@dimen/ksl_dp_100"
+            android:layout_height="@dimen/ksl_dp_40"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="@dimen/ksl_dp_30"
+            android:background="@drawable/btn_bg3"
+            android:gravity="center"
+            android:text="Bagus!"
+            android:textColor="#FF9800"
+            android:textSize="@dimen/ksl_sp_20"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/duck"
+        android:layout_width="@dimen/ksl_dp_110"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/ksl_dp_m_30"
+        android:src="@drawable/icon_children_correct_list_4"
+        app:layout_constraintBottom_toTopOf="@id/list"
+        app:layout_constraintLeft_toLeftOf="@id/list" />
+
+    <ImageView
+        android:id="@+id/cat"
+        android:layout_width="@dimen/ksl_dp_110"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/ksl_dp_m_30"
+        android:src="@drawable/icon_children_top"
+        app:layout_constraintBottom_toTopOf="@id/list"
+        app:layout_constraintRight_toRightOf="@id/list" />
+
+    <LinearLayout
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/ksl_dp_32"
+        android:background="@drawable/bg_list"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bg1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ksl_dp_80"
+            android:background="@drawable/bg_list_item"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/ksl_dp_20">
+
+            <ImageView
+                android:layout_width="@dimen/ksl_dp_50"
+                android:layout_height="@dimen/ksl_dp_50"
+                android:src="@drawable/icon555" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ksl_dp_10"
+                android:layout_weight="1"
+                android:text="Tifanny"
+                android:textColor="#484800"
+                android:textSize="@dimen/ksl_sp_20"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ksl_dp_10"
+                android:text="89P"
+                android:textColor="#fc9055"
+                android:textSize="@dimen/ksl_sp_20"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ksl_dp_80"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/ksl_dp_20">
+
+            <ImageView
+                android:layout_width="@dimen/ksl_dp_50"
+                android:layout_height="@dimen/ksl_dp_50"
+                android:src="@drawable/icon23" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ksl_dp_10"
+                android:layout_weight="1"
+                android:text="Joe"
+                android:textColor="#484800"
+                android:textSize="@dimen/ksl_sp_20"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ksl_dp_10"
+                android:text="87P"
+                android:textColor="#fc9055"
+                android:textSize="@dimen/ksl_sp_20"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ksl_dp_80"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/ksl_dp_20">
+
+            <ImageView
+                android:layout_width="@dimen/ksl_dp_50"
+                android:layout_height="@dimen/ksl_dp_50"
+                android:src="@drawable/icon24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ksl_dp_10"
+                android:layout_weight="1"
+                android:text="Daniel"
+                android:textColor="#484800"
+                android:textSize="@dimen/ksl_sp_20"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ksl_dp_10"
+                android:text="83P"
+                android:textColor="#fc9055"
+                android:textSize="@dimen/ksl_sp_20"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ksl_dp_80"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/ksl_dp_20">
+
+            <ImageView
+                android:layout_width="@dimen/ksl_dp_50"
+                android:layout_height="@dimen/ksl_dp_50"
+                android:src="@drawable/icon25" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ksl_dp_10"
+                android:layout_weight="1"
+                android:text="Eva"
+                android:textColor="#484800"
+                android:textSize="@dimen/ksl_sp_20"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ksl_dp_10"
+                android:text="80P"
+                android:textColor="#fc9055"
+                android:textSize="@dimen/ksl_sp_20"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ksl_dp_80"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/ksl_dp_20">
+
+            <ImageView
+                android:layout_width="@dimen/ksl_dp_50"
+                android:layout_height="@dimen/ksl_dp_50"
+                android:src="@drawable/icon555" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ksl_dp_10"
+                android:layout_weight="1"
+                android:text="Tifanny"
+                android:textColor="#484800"
+                android:textSize="@dimen/ksl_sp_20"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ksl_dp_10"
+                android:text="89P"
+                android:textColor="#fc9055"
+                android:textSize="@dimen/ksl_sp_20"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/l1"
+        android:layout_width="@dimen/ksl_dp_50"
+        android:layout_height="@dimen/ksl_dp_50"
+        android:layout_marginTop="@dimen/ksl_dp_30"
+        android:src="@drawable/icon21"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="@id/bg1"
+        app:layout_constraintTop_toTopOf="@id/bg1" />
+
+    <ImageView
+        android:id="@+id/l2"
+        android:layout_width="@dimen/ksl_dp_30"
+        android:layout_height="@dimen/ksl_dp_30"
+        android:layout_margin="@dimen/ksl_dp_60"
+        android:rotation="-15"
+        android:visibility="invisible"
+        android:src="@drawable/icon21"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/l3"
+        android:layout_width="@dimen/ksl_dp_30"
+        android:layout_height="@dimen/ksl_dp_30"
+        android:layout_marginRight="@dimen/ksl_dp_40"
+        android:layout_marginBottom="@dimen/ksl_dp_120"
+        android:rotation="15"
+        android:src="@drawable/icon21"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/bg1"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/l4"
+        android:layout_width="@dimen/ksl_dp_30"
+        android:layout_height="@dimen/ksl_dp_30"
+        android:rotation="15"
+        android:visibility="invisible"
+        android:src="@drawable/icon21"
+        app:layout_constraintLeft_toLeftOf="@id/bg1"
+        app:layout_constraintRight_toRightOf="@id/bg1"
+        app:layout_constraintTop_toBottomOf="@id/bg1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selamat"
+        android:textColor="#fff"
+        android:textSize="@dimen/ksl_sp_40"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/bg1"
+        app:layout_constraintLeft_toLeftOf="@id/bg1"
+        app:layout_constraintRight_toRightOf="@id/bg1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

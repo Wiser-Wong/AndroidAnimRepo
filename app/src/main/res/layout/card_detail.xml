@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/cardBg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ksl_dp_300"
+        android:elevation="@dimen/ksl_dp_3"
+        app:layout_behavior=".home.HeaderBehavior"
+        app:shapeAppearance="@style/RoundLeftBottomStyle" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/ksl_dp_35"
+        android:layout_marginTop="@dimen/ksl_dp_220"
+        android:elevation="@dimen/ksl_dp_5"
+        app:layout_behavior=".home.DetailBehavior">
+
+        <include layout="@layout/card_detail_desc"></include>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/cover"
+        android:layout_width="@dimen/ksl_dp_300"
+        android:layout_height="@dimen/ksl_dp_300"
+        android:elevation="@dimen/ksl_dp_10"
+        android:scaleType="centerCrop"
+        android:src="@drawable/a"
+        android:transitionName="cover"
+        android:translationX="@dimen/ksl_dp_180"
+        app:layout_behavior=".home.CoverBehavior"
+        app:shapeAppearance="@style/RoundedStyle50" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="@dimen/ksl_dp_24"
+        android:layout_height="@dimen/ksl_dp_24"
+        android:layout_marginLeft="@dimen/ksl_dp_19"
+        android:layout_marginTop="@dimen/ksl_dp_35"
+        android:elevation="@dimen/ksl_dp_4"
+        android:src="@drawable/backw" />
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/ksl_dp_55"
+        android:layout_marginTop="@dimen/ksl_dp_35"
+        android:layout_marginEnd="@dimen/ksl_dp_19"
+        android:alpha="0"
+        android:elevation="@dimen/ksl_dp_4"
+        android:gravity="center"
+        android:text="诗词来了"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

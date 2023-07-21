@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingVertical="@dimen/ksl_dp_15">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/ksl_dp_15">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="凯叔故事"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical|end"
+            android:adjustViewBounds="true"
+            android:visibility="gone"
+            android:src="@drawable/edit_list_icon" />
+    </FrameLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/ksl_dp_15"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_photo1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/ksl_dp_100"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/card1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/iv_photo2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_photo2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="@dimen/ksl_dp_20"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/card2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/iv_photo1"
+            app:layout_constraintRight_toLeftOf="@+id/iv_photo3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_photo3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/card3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/iv_photo2"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/ksl_dp_15"
+        android:lineSpacingExtra="10dp"
+        android:text="      凯叔集团品牌覆盖多元业务范围，包含音频故事、儿童故事机、图书出版、动画电影、电商及儿童剧，其中以凯叔讲故事App、凯叔故事玩偶为重点的子品牌形成儿童优质内容聚合；凯叔童书、凯叔动漫、凯叔优品、凯叔儿童剧成为凯叔集团品牌未来3年重点发力方向，致力于成为儿童优质内容多元化业务服务商，提供包含：故事创作、内容生产、版权运营、IP孵化、用户链接等全产业服务，成为行业内多领域范围专业品牌。\n
+    ”凯叔讲故事”——中国儿童内容领域优质品牌，于2014年4月21日正式创办，专注打造中文领域的优质原创儿童内容，为0-12岁的儿童提供音频、图书及衍生产品，致力成为陪伴一代代中国人的童年品牌，打造孩子喜欢，家长信赖的儿童优质内容专业服务。\n
+        截至2022年，凯叔讲故事App累计播出30000+儿童音视内容，全站总播放量超145亿次，用户平均日收听时长达70分钟，总用户超6000多万，被推荐为”中国孩子的故事大全”。\n
+        【凯叔】集团品牌创始人 凯叔被誉为“儿童故事大王”“全民阅读推广大使”，曾为近千部知名电视剧和电影主要角色配音，主要配音作品有大家熟悉的《变形金刚》《海底总动员》《汽车总动员》等。\n
+【凯叔讲故事App】品牌故事\n
+    2013年3月14日，”问心而生，随性而活”的凯叔辞职后有更多的时间陪伴孩子，他笑称自己的女儿是”故事吃货”，每天都要缠着他讲故事，不在家时必须将故事录好给她。这期间凯叔偶然将录制的故事音频分享到幼儿园班级群，竟意外收获了一批”小粉丝”，并亲切地称他为”凯叔”,”凯叔”之名由此而来。为了方便小粉丝们收听故事，凯叔注册了”凯叔讲故事微信公众号”，并于2014年4月21日正式创办”凯叔讲故事，践行“孩子第一、协作共赢、开拓创新、追求卓越”的价值观，创造优质内容，让孩子在快乐中成长。
+        创业八年来，”凯叔讲故事”被热门综艺”声临其境”、”中华好诗词”等众多节目推荐为”中国孩子的故事大全”。2018年，“凯叔讲故事”获得伦敦书展国际出版业卓越奖“有声书出版商奖”提名，与企鹅兰登书屋等老牌世界出版业巨头同时被提名，成为有声书奖三大入围者之一。国际书展设立有声书奖，有声书也成为出版行业新的风向标。”\n
+    使命——创造优质内容，让孩子在快乐中成长\n
+    愿景——成为陪伴一代代中国人的童年品牌\n
+    ”快乐”——”凯叔讲故事”的出发点，以孩子天真的视角看世界，和他们平等对话，激发孩子的好奇心和想象力，让他们在快乐中探索世界。\n
+    ”成长”——用故事为孩子搭建认知的阶梯，让孩子在知识的滋养中，得到可验证的逐步成长。\n
+    ”穿越”——每款产品都经得住时间的检验，穿越二十年、三十年之后依然可以绽放强大的生命力。\n
+    孩子是天生充满好奇心的，”凯叔讲故事”通过童话、寓言、名著、历史、科普等丰富的儿童内容，启发孩子的探索天性，并由儿童睡前故事逐渐向儿童优质原创内容服务领域拓展，陪伴孩子在快乐中成长。\n
+2014年，“凯叔讲故事”开始源源不断创作优质儿童音频内容，深受孩子们的喜爱。2017年11月公司成立出版部，凯叔以作者身份正式进入出版领域。2018年6月凯叔图书《凯叔讲历史》出版。凯叔童书自2018年上市以来，共出版35个系列151册图书。主要集中在儿童文学、经典国学、科普百科、游戏益智四大品类，陆续增加漫画、发声书和其他图书文创产品。先后打造《凯叔西游记》《凯叔三国演义》《凯叔声律启蒙》等经典图书。IP图书《神奇图书馆》屡获国内出版大奖，《口袋神探》系列成为销量破180万册的爆款。截至2021年12月，凯叔童书的实洋规模已逾3亿元。"
+        android:textColor="@color/black"
+        android:textSize="@dimen/ksl_sp_15" />
+</LinearLayout>

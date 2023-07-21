@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ParentLockActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="30dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ksl_dp_90"
+                android:layout_marginTop="@dimen/ksl_dp_20"
+                android:background="@drawable/round_pink">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/ksl_dp_80"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/ksl_dp_5"
+                    android:layout_marginRight="@dimen/ksl_dp_80"
+                    android:background="@drawable/round_white">
+
+                    <ImageView
+                        android:layout_width="@dimen/ksl_dp_70"
+                        android:layout_height="@dimen/ksl_dp_70"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/icon555" />
+
+                    <TextView
+                        android:layout_width="@dimen/ksl_dp_180"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="81dp"
+                        android:text="Tifanny"
+                        android:textColor="#000"
+                        android:textSize="@dimen/ksl_sp_20" />
+                </FrameLayout>
+
+
+            </FrameLayout>
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/pic1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ksl_dp_280"
+                android:layout_marginTop="@dimen/ksl_dp_20"
+                android:transitionName="root_image"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ksl_dp_20"
+                android:text="Kursus"
+                android:textColor="#000"
+                android:textSize="@dimen/ksl_sp_20"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ksl_dp_10"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="@dimen/ksl_dp_140"
+                        android:layout_height="@dimen/ksl_dp_130"
+                        android:background="@drawable/round_blue2">
+
+                        <FrameLayout
+                            android:layout_width="@dimen/ksl_dp_140"
+                            android:layout_height="@dimen/ksl_dp_130"
+                            android:background="@drawable/round_blue1">
+
+                            <pl.droidsonroids.gif.GifImageView
+                                android:id="@+id/pic2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center" />
+                        </FrameLayout>
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ksl_dp_15"
+                        android:text="Membaca \nBersama Hippo"
+                        android:textColor="#000"
+                        android:textSize="@dimen/ksl_sp_20"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ksl_dp_10"
+                        android:text="Mulai 3 Okt"
+                        android:textColor="#b4b4aa"
+                        android:textSize="@dimen/ksl_sp_12" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="@dimen/ksl_dp_140"
+                        android:layout_height="@dimen/ksl_dp_130"
+                        android:background="@drawable/round_purple1">
+
+                        <FrameLayout
+                            android:layout_width="@dimen/ksl_dp_140"
+                            android:layout_height="@dimen/ksl_dp_130"
+                            android:background="@drawable/round_purple2">
+
+                            <pl.droidsonroids.gif.GifImageView
+                                android:id="@+id/pic3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center" />
+                        </FrameLayout>
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ksl_dp_15"
+                        android:text="Berhitung \nBersama Hippo"
+                        android:textColor="#000"
+                        android:textSize="@dimen/ksl_sp_20"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ksl_dp_10"
+                        android:text="Mulai 3 Okt"
+                        android:textColor="#b4b4aa"
+                        android:textSize="@dimen/ksl_sp_12" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ksl_dp_100">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/icon6"
+            android:scaleType="centerInside"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/icon7"
+            android:scaleType="centerInside"
+            />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/icon8"
+            android:scaleType="centerInside"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

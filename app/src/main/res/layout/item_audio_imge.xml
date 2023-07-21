@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/cover"
+        android:layout_width="0dp"
+        android:layout_margin="@dimen/ksl_dp_5"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="0dp"
+        android:src="@drawable/daiyu1"
+        android:scaleType="fitXY"
+        android:elevation="@dimen/ksl_dp_4"
+        android:transitionName="player_cover"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearance="@style/RoundStyle12"
+        app:layout_constraintDimensionRatio="1:1" />
+
+    <ImageView
+        android:id="@+id/ivPlay"
+        android:elevation="@dimen/ksl_dp_4"
+        app:layout_constraintBottom_toBottomOf="@+id/cover"
+        app:layout_constraintEnd_toEndOf="@+id/cover"
+        android:layout_marginEnd="@dimen/ksl_dp_20"
+        android:layout_marginBottom="@dimen/ksl_dp_15"
+        android:src="@drawable/pause"
+        android:layout_width="@dimen/ksl_dp_35"
+        android:layout_height="@dimen/ksl_dp_35"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

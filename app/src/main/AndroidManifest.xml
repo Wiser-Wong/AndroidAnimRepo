@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="29" />
+
+    <application
+        android:name=".BaseApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AnimationListDemo"
+        tools:targetApi="31">
+        <activity android:name=".MainActivity"/>
+<!--        <activity android:name=".MainActivity"-->
+<!--            android:exported="true">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+
+
+        <activity android:name=".AnimCombinActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".recyclerviewanim.RecyclerViewAnimActivity"/>
+        <activity android:name=".recyclerviewanim.DetailsActivity"/>
+        <activity android:name=".loginanim.LoginPageActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".niftynotification.NotifyActivity"/>
+        <activity android:name=".search.JellyToolBarActivity"/>
+        <activity android:name=".toast.LoadToastActivity"/>
+        <activity android:name=".textanim.TextAnimActivity"/>
+        <activity android:name=".download.DownloadActivity"/>
+        <activity android:name=".cardrotate.CardRotateActivity"/>
+        <activity android:name=".detailspage.DetailsPageActivity"/>
+        <activity android:name=".detailspage.DetailsPageActivity1"/>
+        <activity android:name=".list.ani.HomeAct"
+            android:theme="@style/cardTheme"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ticket.TicketAct"
+
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".ticket.TicketDetail"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name=".ticket.ShareAct"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ticket.TicketSeat"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".audio.AudioMainAct"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:theme="@style/cardTheme"
+            android:name=".audio.FullScreenAudio"
+            android:screenOrientation="portrait" />
+        <activity
+            android:theme="@style/cardTheme"
+            android:name=".audio.NormalAudio"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.HomeActivity"
+            android:theme="@style/cardTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.CardDetail"
+            android:launchMode="singleTop"
+            android:theme="@style/cardTheme"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".home.CardDetail2"
+            android:launchMode="singleTop"
+            android:theme="@style/cardTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.CardDetail3"
+            android:launchMode="singleTop"
+            android:theme="@style/cardTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.CardDetail4"
+            android:launchMode="singleTop"
+            android:theme="@style/cardTheme2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu.MenuAct"
+            android:exported="true"
+            android:screenOrientation="portrait">
+
+
+        </activity>
+        <activity
+            android:name="com.example.bare.MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name="com.example.bare.ParentLockActivity"
+            android:exported="true">
+
+        </activity>
+    </application>
+
+</manifest>
